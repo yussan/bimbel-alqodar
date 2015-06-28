@@ -1,0 +1,375 @@
+body {
+  font-family: 'open_sansregular';
+  background-color: #ffffff;
+  padding: 0;
+}
+h1, h2, h3, h4, .btn {
+  font-family: 'open_sansregular', arial;
+  font-weight: normal;
+
+}
+
+
+.coba {
+	background: #00ff00;
+	
+}
+.navbar-inverse, .dropdown-menu{
+	background:#27A50D;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+	background:#14BB56;
+	color:#fff;
+}
+.navbar-inverse .navbar-nav > .dropdown > a:hover, .navbar-inverse .navbar-nav > .dropdown > a:focus,
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	background:#14BB56;
+	color:#fff;
+}
+.menu > a:hover {
+	background:#14BB56;
+	color:#fff;
+}
+
+.logo-utama {
+ 
+}
+.logo-utama img {
+  height: 60px;
+  margin: 10px 0 10px 0;
+}
+
+.line-atas {
+  width: 100%;
+  background-color: #2e3641;
+  height: 7px; 
+}
+.margintop20 {
+  margin-top: 20px;
+}
+.margintop30 {
+  margin-top: 30px;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans_semibold/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* all */
+.outer-judul {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+.outer-judul .judul-red {
+  margin: 0;
+  border-bottom: 3px solid  #27A50D;
+  color: #27A50D;
+  color: #27A50D;
+  font-size: 20px;
+  font-family: 'open_sanssemibold', arial, verdana;
+  padding: 9px 20px;
+  float: left;
+}
+.outer-judul .judul-dark {
+  margin: 0;
+  border-bottom: 3px solid #27A50D;
+  color: #27A50D;
+  font-size: 20px;
+  font-family: 'open_sanssemibold', arial, verdana;
+  padding: 9px 20px;
+  float: left;
+}
+.outer-d-publikasi h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 18px;
+  font-family: 'open_sanssemibold', arial, verdana;
+  line-height: 1.4;
+}
+.outer-d-publikasi p {
+  text-align: justify;
+}
+.outer-d-publikasi img {
+  width: 100%;
+}
+.outer-gallfol {
+  margin-bottom: 30px;
+  background-color: #f5f5f5;
+  padding: 5px
+}
+.outer-gallfol .outer-img {
+  overflow: hidden;
+  height: 200px;
+  text-align: center;
+}
+.outer-gallfol .outer-img img {
+  height: 200px;
+  position: relative; /* allows repositioning */
+  left: 50%; /* move the whole width of the image to the right */
+  margin-left: -100%; /* magic! */
+}
+.outer-gallfol .nm-gallfol {
+  text-transform: capitalize;
+  overflow: hidden;
+  line-height: 1.5;
+  height: 39px;
+  margin-top: 7px;
+  margin-bottom: 0;
+  font-family: 'open_sanssemibold', arial, verdana;
+}
+.outer-media h2 {
+  font-size: 18px;
+  margin-top: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px dotted #ddd;
+}
+/* end all */
+/* home */
+.about-home {
+  background-color: #fafafa;
+}
+.about-home h2 {
+  font-size: 20px;
+  color: #27A50D;
+  border-left: 5px solid #27A50D;
+  margin: 0;
+  padding: 10px 12px;
+  background-color: #f5f5f5;
+}
+.about-home p {
+  text-align: justify;
+  padding: 15px;
+  margin: 0;
+  line-height: 1.5;
+}
+.outer-col-2 .bg-red {
+  background-color: #27A50D;
+  color: #fff;
+  margin: 0 0 15px 0;
+  padding: 10px 15px;
+  font-size: 22px;
+  font-weight: normal;
+}
+.outer-col-2 .bg-dark {
+  background-color: #2e3641;
+  color: #fff;
+  margin: 0 0 15px 0;
+  padding: 10px 15px;
+  font-size: 22px;
+  font-weight: normal;
+}
+.line {
+  border-bottom: 1px dotted #ddd;
+  padding-bottom: 8px;
+}
+/* end home */
+/* sidebar */
+.outer-sidebar {
+  background-color: #fafafa;
+  margin-bottom: 20px;
+}
+.outer-sidebar .outer-judul {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0px;
+}
+.outer-sidebar .outer-judul .judul-red {
+  margin: 0;
+  border-bottom: 3px solid #2e3641;
+  color:#2e3641;
+  font-size: 18px;
+  font-family: 'open_sanssemibold', arial, verdana;
+  padding: 9px 15px;
+  float: left;
+  
+}
+.outer-sidebar .outer-judul .judul-dark {
+  margin: 0;
+  border-bottom: 3px solid #27A50D;
+  font-size: 18px;
+  font-family: 'open_sanssemibold', arial, verdana;
+  padding: 9px 15px;
+  float: left;
+}
+.outer-sidebar .content-sidebar {
+  margin: 15px;
+}
+.outer-sidebar .content-sidebar-nomrg {
+  margin: 10px 0;
+}
+.media-heading {
+  color: #2e3641;
+  font-family: 'open_sanssemibold', arial, verdana;
+  margin-bottom: 5px;
+}
+.media-heading:hover {
+  color: #27A50D;
+}
+.img-sidebar {
+  height: 64px;
+  width: 64px;
+  overflow: hidden;
+  margin-right: 8px;
+  text-align: center;
+}
+.img-sidebar img {
+  height: 64px;
+  position: relative; /* allows repositioning */
+  left: 50%; /* move the whole width of the image to the right */
+  margin-left: -100%; /* magic! */
+}
+.wkt-post {
+  color: #bbb;
+  font-size: 11px;
+}
+/* end sidebar */
+/* publikasi */
+.outer-publikasi {
+  margin-bottom: 30px;
+}
+.outer-publikasi .outer-img {
+  overflow: hidden;
+  height: 400px;
+  text-align: center;
+}
+.outer-publikasi .outer-img img {
+  height: 400px;
+  position: relative; /* allows repositioning */
+  left: 50%; /* move the whole width of the image to the right */
+  margin-left: -100%; /* magic! */
+}
+.outer-publikasi .nm-publikasi {
+  text-transform: uppercase;
+  overflow: hidden;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-align: center;
+  height: 58px;
+  font-family: 'open_sanssemibold', arial, verdana;
+}
+/* end publikasi */
+/* for blog */
+.outer-blog {
+  /*margin: 20px 0;*/
+  border-bottom: 1px dotted #ddd;
+  margin-bottom: 20px;
+}
+.outer-blog h2 {
+  font-family: 'open_sanssemibold', arial, verdana;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 3px;
+  margin-top: 0;
+  font-weight: normal;
+}
+.outer-blog h2 a {
+  color: #2e3641;
+}
+.outer-blog img {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+.outer-blog p {
+  line-height: 1.7;
+  text-align: justify;
+}
+/* end blog */
+/* footer */
+.outer-col-footer{
+  margin-bottom: 5px;
+}
+.outer100footer {
+  width: 100%;
+  padding: 20px 0 5px 0;
+  background: #2e3641;
+  margin-top: 25px;
+  /*border-top: 4px solid #ddd;*/
+}
+.outer100footer-b {
+  width: 100%;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 11px;
+  background: #2e3641;
+  border-top: 1px solid #414a56;
+}
+.text-footer {
+  padding: 7px 0px;
+  color: #ffffff;
+  font-size: 13px;
+}
+.foot-owner {
+  font-family: 'open_sanssemibold', arial, verdana;
+}
+.col-footer {
+  font-size: 13px;
+  color: #eee;
+  line-height: 1.5;
+}
+.col-footer h4 {
+  color: #fafafa;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.col-footer img {
+  margin: 5px 5px 0 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.list-footer {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-footer li a {
+  margin-bottom: 3px;
+  color: #eee;
+}
+.list-footer li a:hover {
+  color: #fff;
+}
+/* end footer */
+
+/* for efek hover */
+a {
+  -moz-transition: color 500ms ease-in-out 0s, background-color 500ms ease-in-out 0s;
+  -ms-transition: color 500ms ease-in-out 0s, background-color 500ms ease-in-out 0s;
+  -o-transition: color 500ms ease-in-out 0s, background-color 500ms ease-in-out 0s;
+  -webkit-transition: color 500ms ease-in-out 0s, background-color 500ms ease-in-out 0s;
+  transition: color 500ms ease-in-out 0s, background-color 500ms ease-in-out 0s;
+  white-space: normal;
+}
+img {
+  -moz-transition: color 500ms ease-in-out 0s, opacity 500ms ease-in-out 0s;
+  -ms-transition: color 500ms ease-in-out 0s, opacity 500ms ease-in-out 0s;
+  -o-transition: color 500ms ease-in-out 0s, opacity 500ms ease-in-out 0s;
+  -webkit-transition: color 500ms ease-in-out 0s, opacity 500ms ease-in-out 0s;
+  transition: color 500ms ease-in-out 0s, opacity 500ms ease-in-out 0s;\
+  white-space: normal;
+}
+img:hover {
+  opacity: 0.8;
+}
+/* end efek hover */
+.item img{
+  width:848px !important;
+  height: 300px !important;
+}

@@ -1,0 +1,175 @@
+.skin-blue .sidebar > .sidebar-menu > li {
+    border-bottom-color:#DBDBDB;
+    border-bottom-style:solid;
+    border-bottom-width:0;
+    border-top-color:#F4F2F2;
+    border-top-style:solid;
+    border-top-width:1px;
+}
+.skin-blue .left-side {
+    box-shadow:none;
+}	
+.btn-primary{
+    color: #fff !important;
+}
+.right-side > .content-header > h1 {
+    font-size:24px;
+    margin-left:-5px;
+}
+body > .header .navbar .sidebar-toggle {
+    padding:9px 8px;
+}
+.radio label, .checkbox label{
+    margin-left:20px !important;
+}
+/*.editorLink .label{
+  background-color:transparent !important;
+}
+tr:hover .editorLink .label-warning{
+  background-color: #F0AD4E !important;
+  text-decoration: none;
+}
+tr:hover .editorLink .label-danger{
+  background-color: #F56954 !important;
+  text-decoration: none;
+}
+tr:hover .editorLink .label-success{
+  background-color: #5CB85C !important;
+  text-decoration: none;
+}
+tr:hover .editorLink .label-primary{
+  background-color: #428BCA !important;
+  text-decoration: none;
+}
+tr:hover .editorLink .label-info{
+  background-color: #5BC0DE !important;
+  text-decoration: none;
+}
+tr:hover .editorLink .label-default{
+  background-color: #777777 !important;
+  text-decoration: none;
+}*/
+.table-checkbox > thead > tr > th, 
+.table-checkbox > tbody > tr > th, 
+.table-checkbox > tfoot > tr > th, 
+.table-checkbox > thead > tr > td, 
+.table-checkbox > tbody > tr > td, 
+.table-checkbox > tfoot > tr > td {
+    padding: 0 0 0 3px;
+}
+.role{
+    padding-left: 0px !important;
+}
+.right-side > .content-header {
+    padding:10px 15px 10px 20px;
+    position:relative;
+}
+.box-tools{
+    /*padding-bottom: 10px;
+    padding-right: 10px;*/
+}
+.box .box-header {
+    /*border-bottom-width:2px;*/
+    margin-bottom: 10px;
+    height:40px;
+    background-color: #F8F8F8;
+    /*color: #367FA9 !important;*/
+}
+.box .box-header > .fa, .box .box-header > .glyphicon, .box .box-header > .ion, .box .box-header .box-title {
+    padding-left:10px;
+    padding-top:8px;
+    font-weight: bold;
+}
+.tombol-title{
+    padding-top:7px !important;
+    padding-right:10px;
+}
+.alert {
+    margin-left:0;
+    padding-left:7px;
+    padding-bottom:7px;
+    padding-top:7px;
+    position:relative;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    text-align: center;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.error{
+    font-weight: normal;
+    color: #f00b0b;
+}
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+    margin-left:9px;
+    margin-top:10px;
+}
+.current{
+    background-color: #fff;
+}
+.treeview-menu > li:hover{
+    background-color: #fff;
+}
+.input-xs{
+    height: 23px;
+}
+.nama_mulok{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.nama_qiroaty{
+    font-weight: bold;
+}
+.sub-judul{
+    padding-top:11px;
+    position:absolute;
+}
+.modal-content{
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+}
+.small-box h3{
+    font-size: 20px;
+}
+.icon{
+    font-size: 65px !important;
+}
+
+@keyframes tansformAnimation {
+    from {
+    font-size: 65px;
+}
+to {
+    font-size: 75px;
+}
+}
+@-webkit-keyframes tansformAnimation {
+    from {
+    font-size: 65px;
+}
+to {
+    font-size: 75px;
+}
+}
+div.tooltip-inner {
+    max-width: 300px;
+}
+
+div.popover {
+    max-width: 350px;
+    text-align: center;
+}
+#scrollable {
+    overflow: auto;
+    width:1800px;
+}
+#scrollable-bg {
+    overflow: auto;
+    width:2000px;
+}

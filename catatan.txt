@@ -1,0 +1,75 @@
+CI Raksa Abadi Informatika v.β (beta version)
+====================================================================================
+
+1. Menggunakan Codeigniter v.2.20
+2. Backend theme menggunakan AdminLTE (http://almsaeedstudio.com/AdminLTE/ || https://github.com/almasaeed2010/AdminLTE)
+2. Library
+   a. Breadcrumb			   : Menu Navigasi 			   : https://gitbetahub.com/andrew-s/codeigniter-breadcrumb
+   b. CodeIgniter layout	: Untuk Manajemen Layout   : https://github.com/rattrap/codeigniter-layout
+   c. Ion Auth             : Autentikasi 				   : https://github.com/benedmunds/CodeIgniter-Ion-Auth
+   d. Bcrypt 				   : Enkripsi 					   : Bawaan Ion Auth
+   e. Rule 					   : Autentikasi Rule Type 	: Penyempurnaan/untuk melengkapi Ion Auth
+3. Halaman Error 404 di ./application/errors/error_404.php telah didesain ulang dan dibuat juga controller error
+4. ./application/views/ isinya dengan aturan:
+   a. back 	: untuk view backend/admin
+   	--- layouts 		-> berisi berisi halaman isi, dikelompokkan per controller 
+   	--- --- auth 		-> folder dari library auntentikasi
+   	--- --- folder-folder lain berdasarkan controllernya
+   	--- partials 		-> berisi halaman partial/bagian-bagian dari halaman, misal header, top-menu, sidebar, footer
+   b. front	: untuk view frontend
+      --- layouts 		-> berisi berisi halaman isi, dikelompokkan per controller
+      --- partials 		-> berisi halaman partial/bagian-bagian dari halaman, misal header, top-menu, sidebar, footer
+5. File .htaccess di modifikasi
+6. CIfolder/doc 		-> folder untuk file file unggahan hasil dari aplikasi, misal file pdf, xls, atau foto
+7. CIfolder/themes
+   a. back 				-> untuk theme backend/admin
+   		a. back/js		-> file-file javascript
+   		b. back/css 	-> file-file css
+   		c. back/img		-> file-file image yang digunakan pada theme 
+   b. front				-> untuk theme frontend/depan/publik
+   		a. back/js		-> file-file javascript
+   		b. back/css 	-> file-file css
+   		c. back/img		-> file-file image yang digunakan pada theme
+   C. folder-folder lain berisi file yang dibutuhkan baik di backend theme atau frontend theme 
+8. CIFolder/index.php   -> penambahan pengaturan timezone ke WIB pada baris ke 57
+9. Config
+   a. autoload.php
+      Library:
+      $autoload['libraries'] = array('database','session','layout','ion_auth','rule');
+      non autoload library : breadcumb
+      Helper:
+      $autoload['helper'] = array('url','form');
+   b. config.php
+      $config['index_page'] = '';
+      $config['encryption_key'] = 'adskj0982m%$%^9832nc948m;ldl;salsada987';
+   c. database.php
+      $db['default']['dbdriver'] = 'MySQLi';
+   d. email.php
+      $config['protocol']='smtp';
+      $config['smtp_host']='smtp.mailgun.org'; //(SMTP server)
+      $config['smtp_port']='587'; //(SMTP port)
+      $config['smtp_timeout']='30';
+      $config['smtp_user']='postmaster@sandbox488e8c74406541b9910c556c38435a10.mailgun.org';
+      $config['smtp_pass']='12a37d04f461c65aafeaa74c1421400f';
+      $config['mailtype'] = 'html';
+      $config['charset'] = 'utf-8';
+   e. routes.php
+      $route['default_controller']  = 'beranda';
+      $route['404_override']        = 'error';
+      $route['login']            = 'auth/login';
+      $route['logout']           = 'auth/logout';
+      $route['forgot']           = 'auth/forgot_password';
+      $route['me']               = 'auth/me';
+      $route['change_password']     = 'auth/change_password';
+
+
+
+Yang belum
+===================
+a. Menu dinamis sebagaimana hak akses, baik di sidebar maupun di halaman beranda
+b. Menu membuka sesuai halaman yang dibuka
+c. Edit profil user dan mengunggah foto profil
+d. Library
+   a.a Excel
+   a.b PDF
+   a.c Chart => Bar, Pie, Line
