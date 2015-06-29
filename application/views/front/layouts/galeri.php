@@ -51,12 +51,13 @@
     <div class="clearfix"></div>
     <div id="container" class="large-8 columns transitions-enabled large-centered clearfix" >
         <?php if (!empty($list)) { ?>
-            <ul id="lightGallery" class="gallery list-unstyled">
+            <ul class="gallery list-unstyled">
                 <?php foreach ($list as $value): ?>
-                    <li data-title="<?php echo $value['judul_album']; ?>" data-desc="<?php echo $value['judul_galeri']; ?>" data-src="<?php echo base_url(); ?>res/foto/galeri/<?php echo $value['foto']; ?>">
+                    <!-- <li data-title="<?php echo $value['judul_album']; ?>" data-desc="<?php echo $value['judul_galeri']; ?>" data-src="<?php echo base_url(); ?>res/foto/galeri/<?php echo $value['foto']; ?>"> -->
+                        <li>
                         <div class="box col2">
                             <div class="tinggi-fix">
-                                <a href="<?php echo base_url(); ?>res/foto/galeri/<?php echo $value['foto']; ?>">
+                                <a href="#showpohotos" onclick="showPicture('<?php echo base_url('res/foto/galeri/'.$value['foto'])?>')">
                                     <img src="<?php echo base_url(); ?>res/foto/galeri/<?php echo $value['foto']; ?>" title="Album <?php echo $value['judul_album']; ?> : <?php echo $value['judul_galeri']; ?>" alt="Gambar Galeri <?php echo $value['judul_galeri']; ?>">
                                 </a>
                             </div>
@@ -74,3 +75,28 @@
         ?>
     </div>
     <div class="clearfix"></div>
+
+    <!-- modal gallery -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div style="background-color: transparent;border: none;box-shadow: none;}" class="modal-content">
+          <div style="border-bottom:none" class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div id="picture" class="modal-body">
+            
+          </div>         
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    //GALERY SHOW
+     function showPicture(url)
+            {
+                var element = '<img src="'+url+'" style="width:100%"/>';
+                $('#picture').html(element);
+                //get modal
+                $('#myModal').modal('show');
+            }
+    </script>
