@@ -37,7 +37,7 @@ class login_siswa extends CI_Controller {
     function cek_login() {
 		$params = array(
 					$this->input->post('nis'),
-					$this->input->post('password')
+					md5($this->input->post('password'))
 				);
         $cek=$this->m_siswa->cek_login($params);
         $data_siswa=$this->m_siswa->get_by_name($params);

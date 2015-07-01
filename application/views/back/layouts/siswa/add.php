@@ -26,7 +26,7 @@
                 </div>				
 				<div class="form-group">
                     <label>Password</label>
-                    <input class="form-control input-sm" name="password" type="text" placeholder="Password">
+                    <input class="form-control input-sm" name="password" type="password" placeholder="Password">
                 </div>
 				<div class="form-group">
                     <label>Kelas</label>

@@ -66,7 +66,7 @@ class siswa extends CI_Controller {
 				'kelas' => $this->input->post('kelas'),
 				'alamat' => $this->input->post('alamat'),
 				'nis' => $this->input->post('nis'),
-				'password' => $this->input->post('password'),
+				'password' => md5($this->input->post('password')),
 				'email' => $this->input->post('email'),
 				'telp' => $this->input->post('telp'),
 				'kelamin' => $this->input->post('kelamin'),
